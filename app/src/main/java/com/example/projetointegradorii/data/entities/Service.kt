@@ -1,4 +1,4 @@
-package com.example.projetointegradorii.data.messageDatabase.entities
+package com.example.projetointegradorii.data.entities
 
 import android.os.Parcelable
 import androidx.room.Entity

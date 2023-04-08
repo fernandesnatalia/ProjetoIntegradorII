@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="splash_backgroud">#F5F3C9</color>
+    <color name="light_backgroud">#F8F6CA</color>
+    <color name="green">#25AB16</color>
+    <color name="light_green">#B3DAAE</color>
+    <color name="dark_green">#1A6511</color>
+    <color name="light_gray">#E3E3E3</color>
+    <color name="dark_gray">#8E8E8E</color>
+
+    <color name="claro">#FEDBD0</color>
+    <color name="forte">#442C2E</color>
+
+</resources>

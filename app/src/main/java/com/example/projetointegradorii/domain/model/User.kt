@@ -1,4 +1,7 @@
 package com.example.projetointegradorii.domain.model
 
-class User {
-}
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+class User(var name: String = "", var email:String, var password:String): Parcelable

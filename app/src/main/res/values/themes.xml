@@ -1,0 +1,124 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- base app theme -->
+
+    <style name="Theme.ProjetoIntegradorII" parent="Theme.MaterialComponents.Light">
+        <!-- primary brand color -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <!-- secundary brand color -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/dark_green</item>
+        <!-- status bar color -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@color/dark_green</item>
+
+    </style>
+
+    <!-- bottom navigation -->
+
+    <style name="bottomNavigationStyle" parent="Theme.MaterialComponents">
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/dark_green</item>
+    </style>
+
+    <!-- container login contact and join us layout -->
+
+    <style name="container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/custom_container</item>
+        <item name="android:layout_marginTop">@dimen/size_30</item>
+        <item name="android:layout_marginStart">@dimen/size_30</item>
+        <item name="android:layout_marginEnd">@dimen/size_30</item>
+        <item name="android:layout_marginBottom">@dimen/size_70</item>
+    </style>
+
+    <!-- recycler view messages and services layout -->
+
+    <style name="recycler_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:padding">@dimen/size_10</item>
+        <item name="android:background">@drawable/custom_rv</item>
+        <item name="android:layout_marginTop">@dimen/size_30</item>
+        <item name="android:layout_marginStart">@dimen/size_30</item>
+        <item name="android:layout_marginEnd">@dimen/size_30</item>
+        <item name="android:layout_marginBottom">@dimen/size_70</item>
+    </style>
+
+    <!-- edit text of contact and join us layout -->
+
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/custom_shape_general</item>
+        <item name="android:padding">@dimen/size_15</item>
+        <item name="android:textColorHint">@color/green</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:layout_marginLeft">@dimen/size_45</item>
+        <item name="android:layout_marginRight">@dimen/size_45</item>
+        <item name="android:layout_marginTop">@dimen/size_10</item>
+    </style>
+
+    <!-- message -->
+
+    <style name="message">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_170</item>
+        <item name="android:background">@drawable/custom_shape_general</item>
+        <item name="android:padding">@dimen/size_15</item>
+        <item name="android:textColorHint">@color/green</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:layout_marginLeft">@dimen/size_45</item>
+        <item name="android:layout_marginRight">@dimen/size_45</item>
+        <item name="android:layout_marginTop">@dimen/size_10</item>
+    </style>
+
+    <!-- button -->
+
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/custom_shape_general</item>
+        <item name="android:padding">@dimen/size_15</item>
+        <item name="android:textSize">@dimen/text_17</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:layout_marginLeft">@dimen/size_45</item>
+        <item name="android:layout_marginRight">@dimen/size_45</item>
+        <item name="android:layout_marginTop">@dimen/size_10</item>
+    </style>
+
+    <!-- snackbar -->
+
+    <style name="snackbar_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/light_backgroud</item>
+        <item name="android:padding">@dimen/size_10</item>
+    </style>
+
+    <style name="snackbar_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/size_10</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:layout_marginEnd">@dimen/size_10</item>
+        <item name="android:layout_marginStart">@dimen/size_30</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="snackbar_image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/size_10</item>
+        <item name="android:layout_marginStart">@dimen/size_10</item>
+        <item name="android:layout_marginBottom">@dimen/size_10</item>
+    </style>
+
+</resources>

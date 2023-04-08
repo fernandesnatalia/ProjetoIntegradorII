@@ -1,4 +1,5 @@
 package com.example.projetointegradorii.domain.viewState
 
-class Status {
+enum class Status {
+    SUCCESS,ERROR,LOADING
 }

@@ -1,14 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.contact.view.ContactFragment">
+    android:fillViewport="true" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/white"
+        tools:context=".ui.contact.view.ContactFragment">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/ivJoinUs"
+            android:layout_width="@dimen/size_200"
+            android:layout_height="@dimen/size_100"
+            android:src="@drawable/join_us_image"
+            android:layout_marginTop="@dimen/size_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ivAppName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivAppName"
+            android:layout_width="@dimen/size_320"
+            android:layout_height="@dimen/size_100"
+            android:contentDescription="@string/app_name_description"
+            android:src="@drawable/app_name"
+            android:layout_marginTop="@dimen/size_80"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewContainer"
+            style="@style/container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivAppName"/>
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/edit_text"
+            android:hint="@string/your_name"
+            android:inputType="text"
+            android:maxLength="40"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toTopOf="@id/viewContainer" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/edit_text"
+            android:hint="@string/your_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toBottomOf="@id/etName" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            style="@style/message"
+            android:hint="@string/your_message"
+            android:inputType="text"
+            android:maxLength="300"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toBottomOf="@id/etPhone" />
+
+        <Button
+            android:id="@+id/bvSend"
+            style="@style/button"
+            android:text="@string/send"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toBottomOf="@id/etMessage"/>
+
+        <ImageView
+            android:id="@+id/ivSendMessageImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_250"
+            android:layout_marginStart="@dimen/size_50"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_50"
+            android:src="@drawable/sent_message_image"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/ivSendMessageText"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toTopOf="@id/viewContainer" />
+
+        <ImageView
+            android:id="@+id/ivSendMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45"
+            android:layout_marginStart="@dimen/size_70"
+            android:layout_marginEnd="@dimen/size_70"
+            android:src="@drawable/sent_message"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toBottomOf="@id/ivSendMessageImage" />
+
+        <ImageView
+            android:id="@+id/ivReturnSoon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45"
+            android:layout_marginStart="@dimen/size_100"
+            android:layout_marginEnd="@dimen/size_100"
+            android:src="@drawable/return_soon"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/viewContainer"
+            app:layout_constraintStart_toStartOf="@id/viewContainer"
+            app:layout_constraintTop_toBottomOf="@id/ivSendMessageText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

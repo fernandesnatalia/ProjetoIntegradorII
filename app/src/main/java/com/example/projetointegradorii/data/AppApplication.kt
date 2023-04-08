@@ -1,22 +1,23 @@
-package com.example.projetointegradorii.data.messageDatabase
+package com.example.projetointegradorii.data
 
 import android.app.Application
 import androidx.room.Room
+import com.example.projetointegradorii.data.database.PiDatabase
 
 class AppApplication: Application() {
     override fun onCreate() {
         super.onCreate()
         database = Room.databaseBuilder(
             applicationContext,
-            MessageDatabase::class.java, "message-database"
+            PiDatabase::class.java, "pi-database"
         )
             .fallbackToDestructiveMigration().allowMainThreadQueries()
             .build()
     }
 
     companion object {
-        private lateinit var database: MessageDatabase
-        fun getMessageDatabase(): MessageDatabase {
+        private lateinit var database: PiDatabase
+        fun getDatabase(): PiDatabase {
             return database
         }
     }

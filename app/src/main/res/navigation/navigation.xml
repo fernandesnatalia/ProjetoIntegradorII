@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/initialScreenFragment">
+
+    <fragment
+        android:id="@+id/initialScreenFragment"
+        android:name="com.example.projetointegradorii.ui.initialScreen.view.InitialScreenFragment"
+        android:label="fragment_initial_screen"
+        tools:layout="@layout/fragment_initial_screen" >
+        <action
+            android:id="@+id/action_initialScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_initialScreenFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.projetointegradorii.ui.login.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.projetointegradorii.ui.register.view.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.projetointegradorii.ui.contact.view.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/joinUsFragment"
+        android:name="com.example.projetointegradorii.ui.joinUs.view.JoinUsFragment"
+        android:label="fragment_join_us"
+        tools:layout="@layout/fragment_join_us" />
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.projetointegradorii.ui.services.view.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.example.projetointegradorii.ui.messages.view.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+</navigation>

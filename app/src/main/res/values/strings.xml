@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ProjetoIntegradorII</string>
+    <string name="icon_description">Ícone redondo verde. No centro com background branco, há a ilustração de uma mão depositando uma semente em uma superfície</string>
+    <string name="app_name_description">Sociedade de melhoramento do bairro vila nova escrito em verde</string>
+    <string name="enter">ENTRAR</string>
+    <string name="register">CADASTRAR</string>
+    <string name="email">EMAIL</string>
+    <string name="password">SENHA</string>
+    <string name="enter_an_name">INSIRA SEU NOME</string>
+    <string name="enter_an_email">INSIRA UM EMAIL</string>
+    <string name="enter_an_password">INSIRA UMA SENHA NUMÉRICA</string>
+    <string name="repeat_the_password">REPITA A SENHA</string>
+    <string name="send">ENVIAR</string>
+    <string name="messages">Mensagens</string>
+    <string name="services">Serviços</string>
+    <string name="contact">Contato</string>
+    <string name="your_name">SEU NOME</string>
+    <string name="your_phone">TELEFONE PARA CONTATO</string>
+    <string name="date">EM CASO DE LOCAÇÃO,IDENTIFIQUE A DATA DESEJADA</string>
+    <string name="join_us_message">QUERO ME ASSOCIAR À SMBVN</string>
+    <string name="your_message">SUA MENSAGEM</string>
+    <string name="join_us">Associe-se</string>
+    <!-- example messages -->
+    <string name="msg1">Reunião para organização da festa junina\nDia 07/05/2022\nHorário 15:00\nEndereço Av. Nações Unidas, 344 - Vila Nova - Cubatão\nConvidamos à todos os moradores da Vila Nova e Região para a organização da nossa querida festa junina de 2022.Todos são bem vindos.</string>
+    <string name="msg2">Ação beneficente de Pascoa\nDia 16/04/2022\nHorário 11:00\nEndereço Av. Nações Unidas, 344 - Vila\nConvidamos à todos os moradores da Vila Nova e Região para participar da ação beneficiente, onde iremos entregar todos os chocolates e brinquedos comprados com os valores que coletamos nas rifas. O transporte sairá às 11:30 da sede diretamente para as organizações beneficiadas, informadas nas rifas.</string>
+    <string name="msg3">Ação beneficente para a Páscoa\nDia 09/04/2022\nHorário 13:00 às 17:00\nEndereço Av. Nações Unidas, 344 - Vila Nova - Cubatão\nConvidamos à todos os moradores da Vila Nova e Região para participar da ação. Iremos rifar vários produtos incríveis, dentre eles estão eletrodomésticos, produtos de maquiagem e  vouchers para usar em vários estabelecimentos parceiros. Traga sua família e venha apoiar essa ação em prol das crianças carentes da região. Todos são bem vindos. </string>
+    <string name="msg4">Projeto de Obra para Vila Nova gera expectativa nos moradores\nA apresentação do Projeto de Obra de Ciclovia e Infraestrutura da Vila Nova do Governo Municipal com patrocínio da Agência Metropolitano de Desenvolvimento da Baixada Santista, a Agem, foi realizada ontem no Auditório da Paróquia São Francisco de Assis, localizada na Avenida Nossa Senhora da Lapa, onde será implantada a Ciclovia. O custo da obra que foi negociado é de R$ 4.963.000,00 que ficou a cargo da Empresa FFL – Comércio e Serviços sediada em São Paulo com prazo previsto para entrega de 11 meses segundo o secretário de Obras, Benaldo Melo de Souza, responsável pela apresentação do projeto (ver detalhes abaixo). O prefeito Ademário Oliveira também esteve presente e auxiliou o secretário durante a apresentação do projeto, que também contou com a presença do presidente da Câmara Fábio Roxinho, os vereadores Sérgio Calçados, Rodrigo Alemão e Anderson Veterinário, que também residem no bairro, além do pároco local, padre Roque.</string>
+    <!-- example services -->
+    <string name="service1">Contato: Felipe Augusto\n13 912345678\nRua Treze de Maio, 04 - Vila Nova, Cubatão\nServiço: Conserto de máquina de lavar, microondas, ar condicionado, geladeiras, fogão. Elétrica em geral. De segunda a sexta, 08h às 18h.</string>
+    <string name="service2">Contato: Brisa Artes\n13 912345777\nAv. Nações Unidas, 921 - Vila Nova - Cubatão\nServiço: Artigos de Festa e decoração infantil. Descartáveis. Temáticos. Lembrancinhas. De segunda a sábado, 09h às 18h. </string>
+    <string name="service3">Contato: Dra Flavia Ana Maria\n13 91234588\nAv. Cruzeiro do Sul, 745 - Vila Nova, Cubatão\nServiço: Dentista especializado em ortodontia, próteses, dentística, cirurgia, endodontia, implantodontia, odontopediatria, odontogeriatria e muito mais. De segunda à sexta 10h às 19h. Sábado apenas  agendamento</string>
+    <string name="service4">Contato: Aline Fernandes\n13 912345677\nRua Jéferson Damião do Amaral 5285 - Vila Nova, Cubatão\nServiço: Salão Pediarte.\nAlongamento  de unhas acrílica, vidro e gel. Podóloga com hora marcada. Maquiagem com hora marcada. Cabelo com hora marcada. De segunda a sabado, das 10h às 21h. </string>
+    <string name="service5">Contato: Mecânico Douglas\n13 912347777\nRua Treze de Maio, 58474 - Vila Nova, Cubatão\nServiço: Oficina mecânica há mais de 30 anos proporcionando um atendimento de qualidade a preços justos. Honestidade e transparência são os nossos principais valores, construindo ao longo do tempo mais do que clientes: Amigos! Atuamos com </string>
+
+</resources>

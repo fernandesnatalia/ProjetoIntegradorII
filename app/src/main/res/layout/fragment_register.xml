@@ -1,14 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.register.view.RegisterFragment">
+    android:fillViewport="true" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/white"
+        tools:context=".ui.register.view.RegisterFragment">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/size_200"
+            android:layout_height="@dimen/size_150"
+            android:layout_marginTop="@dimen/size_50"
+            android:contentDescription="@string/icon_description"
+            android:src="@drawable/app_icon"
+            app:layout_constraintBottom_toTopOf="@id/ivAppName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_80"
+            android:src="@drawable/app_name"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginBottom="@dimen/size_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo"
+            app:layout_constraintBottom_toTopOf="@id/etInsertName"/>
+
+        <EditText
+            android:id="@+id/etInsertName"
+            style="@style/edit_text"
+            android:hint="@string/enter_an_name"
+            android:autofillHints="text"
+            android:inputType="text"
+            android:maxLength="50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivAppName"
+            app:layout_constraintBottom_toTopOf="@id/etInsertEmail"/>
+
+        <EditText
+            android:id="@+id/etInsertEmail"
+            style="@style/edit_text"
+            android:layout_marginTop="@dimen/size_15"
+            android:hint="@string/enter_an_email"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:drawableEnd="@drawable/ic_email"
+            android:drawableTint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etInsertName"
+            app:layout_constraintBottom_toTopOf="@id/etInsertPassword"/>
+
+        <EditText
+            android:id="@+id/etInsertPassword"
+            style="@style/edit_text"
+            android:layout_marginTop="@dimen/size_15"
+            android:hint="@string/enter_an_password"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:drawableEnd="@drawable/ic_password"
+            android:drawableTint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etInsertEmail"
+            app:layout_constraintBottom_toTopOf="@id/bvEnter"/>
+
+        <Button
+            android:id="@+id/bvEnter"
+            style="@style/button"
+            android:text="@string/enter"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etInsertPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

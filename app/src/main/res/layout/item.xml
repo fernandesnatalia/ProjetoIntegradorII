@@ -7,26 +7,16 @@
     android:layout_height="wrap_content"
     android:backgroundTint="@color/white"
     android:layout_margin="@dimen/size_05"
-    android:id="@+id/cvServiceItem">
+    android:id="@+id/cvItem">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
+        android:id="@+id/tvItem"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tvMessage"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/size_120"
-            android:padding="@dimen/size_10"
-            android:background="@color/white"
-            android:text="@string/service1"
-            android:textColor="@color/text_color"
-            android:textStyle="normal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="@dimen/size_120"
+        android:padding="@dimen/size_10"
+        android:background="@color/white"
+        android:text="@string/service1"
+        android:textColor="@color/dark_gray"
+        android:textStyle="normal"/>
 
 </androidx.cardview.widget.CardView>
