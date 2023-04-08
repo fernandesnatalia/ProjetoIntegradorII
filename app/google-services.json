@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644974190045",
+    "project_id": "projetointegradorii-7fafc",
+    "storage_bucket": "projetointegradorii-7fafc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644974190045:android:b09b18f37bbf41ebe4aa34",
+        "android_client_info": {
+          "package_name": "com.example.projetointegradorii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644974190045-2nepujse6pok0gtm9k250qkdu2q2ots8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeYjVWKoTXixkP2VeuChF-wY9F8wk_TLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644974190045-2nepujse6pok0gtm9k250qkdu2q2ots8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
